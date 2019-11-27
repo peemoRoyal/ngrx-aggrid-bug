@@ -1,0 +1,13 @@
+<ag-grid-angular 
+  style="width: 1000px; height: 500px;" 
+  class="ag-theme-balham"
+  [rowData]="tableData.rowData"
+  [columnDefs]="tableData.columnDefs"
+  [modules]="modules"
+  (cellClicked)="cellClicked($event)"
+  (gridReady)="onGridReady($event)"
+  [deltaRowDataMode]="true"
+  [getRowNodeId]="getRowNodeId"
+  [defaultColDef]="defaultColDef"
+  >
+</ag-grid-angular>
